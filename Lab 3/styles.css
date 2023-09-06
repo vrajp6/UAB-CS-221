@@ -1,0 +1,88 @@
+/* TYPOGRAPHY SETTINGS */
+
+/* Body font style for a clear and legible presentation */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4; /* Light gray background for contrast and clean look */
+}
+
+/* Distinct font for headings to differentiate from general content */
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* COLORS AND BACKGROUNDS */
+
+/* Header styling for emphasis and clarity */
+header {
+    background-color: #333;  /* Dark background for contrast */
+    color: #fff;  /* White font color for readability on dark background */
+    text-align: center;
+}
+
+/* Consistent background for sections and footer */
+section, footer {
+    background-color: #e6e6e6; /* Slightly lighter than the body for differentiation */
+}
+
+/* PADDING AND MARGINS */
+
+/* Consistent spacing for header, sections, and footer for visual appeal */
+header, section, footer {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* TEXT AND LINK STYLING */
+
+/* Hyperlink styling for differentiation and interactivity */
+a {
+    color: #0077cc;
+    text-decoration: none; /* Clean look without underline */
+}
+
+/* Hover effect for better user interaction */
+a:hover {
+    text-decoration: underline;
+}
+
+/* NAVIGATION MENU STYLING */
+
+/* Navigation link styling for emphasis and visual feedback */
+nav a {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Hover effect to indicate interactivity */
+nav a:hover {
+    background-color: #0055aa;
+}
+
+/* IMAGE STYLING */
+
+/* Image styles for uniformity and visual emphasis */
+img {
+    max-width: 100%;  /* To ensure images are responsive and don't overflow */
+    border: 2px solid #333;
+}
+
+/* PRESENTATION AND ALIGNMENT */
+
+/* Unordered list styling for the projects section */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual project item styling for clarity */
+#projects li {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
