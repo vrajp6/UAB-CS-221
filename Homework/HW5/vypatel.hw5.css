@@ -1,0 +1,34 @@
+/* Started with a wildcard element to set all element padding and margin to 0px and set the box-sizing to border-box. */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set the header element to sticky at the top of the viewport and gave it a bottom border. */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #f7a7a7;  /* set a unique background color here */
+    border-bottom: 2px solid #333;
+}
+
+/* Set my main element to 80% width and centered it. */
+main {
+    width: 80%;
+    margin: 20px auto;  /* This centers the main element */
+    background-color: #a7d7f7;  /* Another unique background color */
+}
+
+/* Set my footer element to fixed at the bottom of the viewport and makes sure that it takes up the entire viewport width. */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7a7;  /* Another unique background color */
+}
+
+/* Giving my paragraph element 1em padding on all sides. */
+p {
+    padding: 1em;
+}
