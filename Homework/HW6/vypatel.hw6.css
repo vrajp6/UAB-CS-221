@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-auto-flow: dense; /* this will allow the grid to fill in gaps intelligently */
+    grid-auto-flow: dense; /* this allows the grid to fill in gaps intelligently */
     width: calc(150px * 3 + 3rem); 
     gap: 1rem;
 }
