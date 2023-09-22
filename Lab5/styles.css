@@ -1,0 +1,171 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out logo and right-links */
+    align-items: center; /* Vertically align everything in the middle */
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px; /* Add some padding for better spacing */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 32px;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background on hover */
+}
+.logo h1 {
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.logo p {
+    font-size: 32px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.welcome {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Image Styling */
+.face-shot {
+    border-radius: 50%; /* This will make the image a circle */
+    width: 400px; /* You can adjust this value as per your requirement */
+    height: 400px; /* Make sure this is the same as the width to maintain the circle shape */
+    object-fit: cover; /* This will ensure the image covers the entire space without distortion */
+    margin-right: 20px; /* Add some spacing between the image and the text */
+}
+
+/* About Me Layout */
+#aboutme {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align the image and the text */
+    padding: 20px 0; /* Add some vertical padding for spacing */
+}
+
+.about {
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    flex: 1; /* This will make the text take up the remaining space after the image */
+    /* Removed the float: right; as it's not needed with flexbox */
+}
+
+/* General Styling */
+section {
+    padding: 40px 0; /* Vertical padding for each section */
+    background-color: #f4f4f4; /* Light grey background for contrast */
+    border-bottom: 1px solid #e0e0e0; /* A subtle border between sections */
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+
+/* Skills Section */
+#skills {
+    font-family: 'Lora', serif;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow the skills to wrap to the next line */
+    justify-content: center; /* Center the skills */
+}
+
+#skills li {
+    margin: 10px;
+    font-size: 24px;
+}
+
+/* Projects Section */
+#projects ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow the projects to wrap to the next line */
+    justify-content: space-around; /* Even spacing between projects */
+}
+
+#projects li {
+    background-color: #fff; /* White background for each project */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    width: 300px; /* Fixed width for each project */
+    margin: 20px 0; /* Vertical spacing between projects */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#projects a {
+    display: block;
+    margin-top: 10px; /* Spacing above the link */
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for the link */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#projects a:hover {
+    background-color: #555; /* Darken the background on hover */
+}
+
+/* Contact Section */
+#contact ul {
+    display: flex;
+    justify-content: center; /* Center the contact links */
+}
+
+#contact li {
+    margin: 0 15px; /* Horizontal spacing between links */
+}
+
+#contact a {
+    font-size: 24px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+#contact a:hover {
+    color: #555; /* Darken the color on hover */
+}
+/* Grid Wrapper */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    gap: 40px; /* Spacing between grid items */
+    padding: 40px 0; /* Vertical padding for the wrapper */
+}
+
+/* Adjustments for Skills and Projects inside the grid */
+#skills, #projects {
+    padding: 0; /* Remove the vertical padding as it's now on the grid-wrapper */
+}
+
+.skills-logos {
+    display: flex; /* Align logos in a row */
+    justify-content: center; /* Center the logos */
+    gap: 40px; /* Spacing between logos */
+    margin-top: 20px; /* Spacing above the logos */
+}
+
+.skill-logo {
+    width: 200px; /* Adjust based on your preference */
+    height: 200px; /* Adjust based on your preference */
+    object-fit: contain; /* Ensures the logos maintain their aspect ratio */
+}
