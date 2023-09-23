@@ -126,24 +126,6 @@ ul {
     background-color: #555; /* Darken the background on hover */
 }
 
-/* Contact Section */
-#contact ul {
-    display: flex;
-    justify-content: center; /* Center the contact links */
-}
-
-#contact li {
-    margin: 0 15px; /* Horizontal spacing between links */
-}
-
-#contact a {
-    font-size: 24px;
-    transition: color 0.3s; /* Smooth transition for hover effect */
-}
-
-#contact a:hover {
-    color: #555; /* Darken the color on hover */
-}
 /* Grid Wrapper */
 .grid-wrapper {
     display: grid;
@@ -168,4 +150,63 @@ ul {
     width: 200px; /* Adjust based on your preference */
     height: 200px; /* Adjust based on your preference */
     object-fit: contain; /* Ensures the logos maintain their aspect ratio */
+}
+
+/* New styles for the contact container */
+.contact-container {
+    display: flex; /* Use flexbox to create a row layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between Contact Me and social media links */
+    padding: 40px; /* Add padding for spacing */
+    background-color: #f4f4f4; /* Background color for contrast */
+}
+
+/* Style for the Contact Me section */
+#contact {
+    flex: 1; /* Make Contact Me take up available space */
+    padding-left: 100px;
+}
+
+#contact h2 {
+    font-size: 36px;
+    text-align: left;
+}
+
+#contact a:hover {
+    color: #555;
+}
+
+/* Style for the Social Media Links */
+.social-media-links {
+    display: flex; /* Align links in a row */
+    gap: 20px; /* Spacing between links */
+}
+
+/* Set consistent dimensions for each social media logo */
+.social-media-links a img {
+    width: 80px; /* Adjust based on your desired size */
+    height: 80px; /* Adjust based on your desired size */
+    object-fit: contain;
+    align-items: center; /* Vertically align the logo */
+    transform: translateY(20px);
+}
+
+/* Specific adjustment for the LinkedIn logo */
+.social-media-links a:nth-child(2) img {
+    width: 125px; /* Adjust to match the size of the other logos */
+    height: 125px; /* Adjust to match the size of the other logos */
+    align-items: center; /* Vertically align the logo */
+    transform: translateY(-2px);
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0; /* Remove default margin to prevent spacing around the text */
 }
