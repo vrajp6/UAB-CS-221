@@ -223,3 +223,55 @@ footer p {
 .fa-icon:hover {
     color: #555; 
 }
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+    margin-top: 50px;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #FAFAFF;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    color: #FAFAFF;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #FAFAFF;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical; 
+    min-height: 150px; 
+}
+
+form input[type="submit"] {
+    background-color: #555;
+    color: #FAFAFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #777;
+}
