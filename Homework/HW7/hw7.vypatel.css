@@ -1,0 +1,106 @@
+/* Grid Layout */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 80px;
+    justify-content: center;
+}
+
+main div {
+    width: 300px;
+    height: 300px;
+    position: relative; /* Added for positioning pseudo-elements */
+}
+
+/* Background Images */
+main div:nth-child(1) {
+    background-image: url('pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+main div:nth-child(2) {
+    background-image: url('pic2.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+main div:nth-child(3) {
+    background-image: url('pic3.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+main div:nth-child(4) {
+    background-image: url('pic4.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+/* Pseudo-classes */
+main div:hover {
+    transform: scale(1.05);
+}
+
+main div:nth-child(even) {
+    border-style: dotted;
+}
+
+/* Pseudo-elements */
+main div::before {
+    content: "Sunset at the beach"; /* Change this for each image */
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+main div:hover::before {
+    display: flex;
+}
+
+main div::after {
+    content: "🔍"; /* Using an emoji for simplicity. Replace with an icon if preferred */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    z-index: 2;
+}
+
+main div:hover::after {
+    display: block;
+}
+
+/* Bonus */
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+}
+
+/* Example: Excluding the first grid item from hover effect */
+main div:not(:nth-child(1)):hover {
+    transform: scale(1.05);
+}
+
+/* I excluded the first grid item from the hover effect because it's a special image that I don't want to be zoomed in on hover. */
