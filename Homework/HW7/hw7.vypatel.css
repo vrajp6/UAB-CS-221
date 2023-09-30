@@ -10,39 +10,43 @@ main div {
     width: 300px;
     height: 300px;
     position: relative; /* Added for positioning pseudo-elements */
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 
 /* Background Images */
 main div:nth-child(1) {
     background-image: url('pic1.jpg');
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 main div:nth-child(2) {
     background-image: url('pic2.jpg');
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 main div:nth-child(3) {
     background-image: url('pic3.jpg');
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 main div:nth-child(4) {
     background-image: url('pic4.jpg');
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 /* Pseudo-classes */
@@ -56,27 +60,51 @@ main div:nth-child(even) {
 
 /* Pseudo-elements */
 main div::before {
-    content: "Sunset at the beach"; /* Change this for each image */
-    display: none;
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), transparent);
     color: white;
+    font-size: 30px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+main div:nth-child(1):hover::before {
+    content: "\A\A\A Soccer";
+    white-space: pre;
+}
+
+main div:nth-child(2):hover::before {
+    content: "\A\A\A Basketball";
+    white-space: pre;
+}
+
+main div:nth-child(3):hover::before {
+    content: "\A\A\A Volleyball";
+    white-space: pre;
+}
+
+main div:nth-child(4):hover::before {
+    content: "\A\A\A Baseball";
+    white-space: pre;
 }
 
 main div:hover::before {
     display: flex;
+    opacity: 1;
 }
 
 main div::after {
-    content: "🔍"; /* Using an emoji for simplicity. Replace with an icon if preferred */
+    content: "🔍";
     display: none;
     position: absolute;
     top: 50%;
