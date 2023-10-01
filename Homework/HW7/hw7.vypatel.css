@@ -1,7 +1,7 @@
 /* Grid Layout */
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: 1fr;
     gap: 80px;
     justify-content: center;
 }
@@ -9,44 +9,28 @@ main {
 main div {
     width: 300px;
     height: 300px;
-    position: relative; /* Added for positioning pseudo-elements */
+    position: relative;
     background-size: cover;
     background-position: center;
     border: 5px solid black;
     border-radius: 10px;
 }
 
-/* Background Images */
+/* The images for the photo gallery */
 main div:nth-child(1) {
     background-image: url('pic1.jpg');
-    /* background-size: cover;
-    background-position: center;
-    border: 5px solid black;
-    border-radius: 10px; */
 }
 
 main div:nth-child(2) {
     background-image: url('pic2.jpg');
-    /* background-size: cover;
-    background-position: center;
-    border: 5px solid black;
-    border-radius: 10px; */
 }
 
 main div:nth-child(3) {
     background-image: url('pic3.jpg');
-    /* background-size: cover;
-    background-position: center;
-    border: 5px solid black;
-    border-radius: 10px; */
 }
 
 main div:nth-child(4) {
     background-image: url('pic4.jpg');
-    /* background-size: cover;
-    background-position: center;
-    border: 5px solid black;
-    border-radius: 10px; */
 }
 
 /* Pseudo-classes */
@@ -118,17 +102,10 @@ main div:hover::after {
     display: block;
 }
 
-/* Bonus */
+/* Bonus - sticky header */
 header {
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 3;
 }
-
-/* Example: Excluding the first grid item from hover effect */
-main div:not(:nth-child(1)):hover {
-    transform: scale(1.05);
-}
-
-/* I excluded the first grid item from the hover effect because it's a special image that I don't want to be zoomed in on hover. */
