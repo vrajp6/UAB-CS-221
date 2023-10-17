@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade-Based Treats</title>
+    <link rel="stylesheet" href="vypatel.hw8.css">
+
+</head>
+
+<body>
+
+<script>
+    function getGradeReward() {
+        const grade = parseInt(prompt("Enter the student's numeric grade:"));
+
+        if (isNaN(grade) || grade < 0 || grade > 100) {
+            console.log('Invalid grade value entered. Please enter a value between 0 and 100.');
+            return;
+        }
+
+        let letterGrade;
+        let reward;
+
+        if (grade >= 90 && grade <= 100) {
+            letterGrade = 'A';
+            reward = 'Candy';
+        } else if (grade >= 80 && grade <= 89) {
+            letterGrade = 'B';
+            reward = 'Apple';
+        } else if (grade >= 70 && grade <= 79) {
+            letterGrade = 'C';
+            reward = 'Mint';
+        } else if (grade >= 60 && grade <= 69) {
+            letterGrade = 'D';
+            reward = 'Pencil';
+        } else {
+            letterGrade = 'F';
+            reward = 'Awkward conversation with parents';
+        }
+
+        console.log(`Grade: ${grade}`);
+        console.log(`Letter Grade: ${letterGrade}`);
+        console.log(`Reward: ${reward}`);
+    }
+
+    // Execute the function when the page loads
+    window.onload = getGradeReward;
+</script>
+
+</body>
+
+<body>
+    <h1>Grade Reward System</h1>
+</body>
+
+</html>
