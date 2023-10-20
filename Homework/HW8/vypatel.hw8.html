@@ -10,13 +10,15 @@
 </head>
 
 <body>
-
+    <header>
+        <h1>Grade Reward System</h1>
+    </header>
 <script>
     function getGradeReward() {
         const grade = parseInt(prompt("Enter the student's numeric grade:"));
 
         if (isNaN(grade) || grade < 0 || grade > 100) {
-            console.log('Invalid grade value entered. Please enter a value between 0 and 100.');
+            console.log('You entered an invalid grade. Please enter a grade between 0 and 100.');
             return;
         }
 
@@ -45,14 +47,9 @@
         console.log(`Reward: ${reward}`);
     }
 
-    // Execute the function when the page loads
+
     window.onload = getGradeReward;
 </script>
 
 </body>
-
-<body>
-    <h1>Grade Reward System</h1>
-</body>
-
 </html>
