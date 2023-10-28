@@ -1,0 +1,13 @@
+/* added some css to make the game look better */
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+    text-align: center; 
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+}
