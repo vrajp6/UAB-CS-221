@@ -1,0 +1,68 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #242424; 
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh;
+    padding: 20px;
+    margin: 0; 
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#choices button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white; 
+    outline: none; 
+}
+
+#rock::before {
+    content: '✊ ';
+    display: inline-block;
+}
+
+#paper::before {
+    content: '✋ ';
+    display: inline-block;
+}
+
+#scissors::before {
+    content: '✌️ ';
+    display: inline-block;
+}
+
+#rock {
+    background-color: rgb(255, 67, 67);
+    border: none; 
+}
+
+#paper {
+    background-color: rgb(76, 161, 241);
+    border: none; 
+}
+
+#scissors {
+    background-color: rgb(58, 196, 58);
+    border: none; 
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: yellow;
+    font-weight: bold;
+}
