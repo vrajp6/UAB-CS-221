@@ -1,3 +1,4 @@
+/* setting the basic styling for the entire webpage */
 body {
     font-family: 'Bebas Neue', sans-serif;
     background-color: #242424; 
@@ -11,12 +12,14 @@ body {
     margin: 0; 
 }
 
+/* styling the div that contains the game choices - rock, paper, and scissors */
 #choices {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
+/* styles the buttons that are in the #choices div */
 #choices button {
     margin: 10px;
     padding: 10px 20px;
@@ -28,36 +31,39 @@ body {
     outline: none; 
 }
 
+/* Adds emojis before the text on each button */
 #rock::before {
-    content: '✊ ';
+    content: '✊ '; /* emoji for rock */
     display: inline-block;
 }
 
 #paper::before {
-    content: '✋ ';
+    content: '✋ '; /* emoji for paper */
     display: inline-block;
 }
 
 #scissors::before {
-    content: '✌️ ';
+    content: '✌️ '; /* emoji for scissors */
     display: inline-block;
 }
 
+/* styling each of the specific buttons */
 #rock {
-    background-color: rgb(255, 67, 67);
+    background-color: rgb(255, 67, 67); /* red */
     border: none; 
 }
 
 #paper {
-    background-color: rgb(76, 161, 241);
+    background-color: rgb(76, 161, 241); /* blue */
     border: none; 
 }
 
 #scissors {
-    background-color: rgb(58, 196, 58);
+    background-color: rgb(58, 196, 58); /* green */
     border: none; 
 }
 
+/* styling the div that contains the result of the game */
 #result {
     margin-top: 20px;
     font-size: 20px;

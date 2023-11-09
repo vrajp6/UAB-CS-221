@@ -41,16 +41,16 @@ function generateComputerChoice() {
 
 // this function determines the winner by comparing the player's choice to the computer's choice
 function chooseWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) {
-        return "It's a tie!";
+    if (playerChoice === computerChoice) { //checking if the player and computer chose the same thing
+        return "It's a tie!"; // if they did then print "it's a tie"
     } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "scissors" && computerChoice === "paper") ||
         (playerChoice === "paper" && computerChoice === "rock")
     ) {
-        return "Player wins!";
+        return "Player wins!"; // the player wins if these conditions are met
     } else {
-        return "Computer wins!";
+        return "Computer wins!"; //if none of those conditions are met then the computer wins
     }
 }
 
