@@ -15,6 +15,8 @@ function searchForBooks() {
     /* ChatGPT Prompt: If I was asked to implement a function to make a request to the Google Books APILinks to an external site when the user searches for books using the search button, then
      process the API response to retrieve book data, how would I write that in JavaScript. */
      // creating the API URL by encoding the search text and adding it to the end of the URL
+     // used this link to understand the Fetch API before proceeding: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+     // creating the API URL by encoding the search text and adding it to the end of the URL
     const bookAPIUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchText)}`;
 
     // fetching the data from the API URL
