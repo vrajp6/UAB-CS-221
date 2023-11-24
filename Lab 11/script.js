@@ -97,10 +97,10 @@ function addToBookshelf(book) {
     // checking if the book is already in the bookshelf
     bookshelf.push(book);
     localStorage.setItem('bookshelf', JSON.stringify(bookshelf));
-    displayBookshelf(); 
+    showBookshelf(); 
 }
 // this function displays the bookshelf
-function displayBookshelf() {
+function showBookshelf() {
     const bookshelfList = document.getElementById('bookshelfList');
     bookshelfList.innerHTML = '';
     
@@ -134,8 +134,8 @@ function removeFromBookshelf(bookToRemove) {
     bookshelf = bookshelf.filter(book => book.id !== bookToRemove.id);
     // save the updated bookshelf to local storage
     localStorage.setItem('bookshelf', JSON.stringify(bookshelf));
-    displayBookshelf(); // update the bookshelf display
+    showBookshelf(); // update the bookshelf display
 }
 
-// calling displayBookshelf on page load to show the stored bookshelf
-window.onload = displayBookshelf;
+// calling showBookshelf on page load to show the stored bookshelf
+window.onload = showBookshelf;
