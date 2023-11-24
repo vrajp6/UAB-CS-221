@@ -1,4 +1,4 @@
-/* Adding a default font and background color to the entire page, and resetting margins and paddings */
+/* adding a default font and background color to the entire page, and resetting margins and paddings */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
@@ -6,27 +6,27 @@ body {
     padding: 0;
 }
 
-/* Centering the title area content and adding some space at the top */
+/* centering the title area content and adding some space at the top */
 #titleArea {
     text-align: center;
     padding-top: 50px; 
 }
 
-/* Setting the main title's font size and color, and resetting the margin again for consistency */
+/* setting the main title's font size and color, and resetting the margin again for consistency */
 #titleArea h1 {
     margin: 0;
     font-size: 3em; 
     color: #333;
 }
 
-/* Styling the subtitle with a smaller font size and a lighter color for a better looking visual */
+/* styling the subtitle with a smaller font size and a lighter color for a better looking visual */
 #titleArea p {
     margin: 10px 0 20px 0;
     font-size: 1.2em;
     color: #666;
 }
 
-/* Giving the search area a white background and subtle shadow so there is a contrast effect */
+/* giving the search area a white background and subtle shadow so there is a contrast effect */
 #searchArea {
     background-color: #fff;
     padding: 20px;
@@ -34,7 +34,7 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Styling the search input field to match the overall design */
+/* styling the search input field to match the overall design */
 #searchInput {
     width: 300px;
     padding: 10px;
@@ -43,7 +43,7 @@ body {
     border-radius: 4px;
 }
 
-/* Styling the search button with a blue background and smooth transition for hover effect */
+/* styling the search button with a blue background and smooth transition for hover effect */
 #searchButton {
     padding: 10px 20px;
     border: none;
@@ -54,18 +54,18 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* makeing the search button darker on hover to show that it is clickable */
+/* making the search button darker on hover to show that it is clickable */
 #searchButton:hover {
     background-color: #0056b3;
 }
 
-/* Setting the margin around the book list for spacing from other elements */
+/* setting the margin around the book list for spacing from other elements */
 #bookList {
     margin: 20px;
     padding: 0;
 }
 
-/* Adding style to each book item with a shadow to make it pop out from the list */
+/* adding style to each book item with a shadow to make it pop out from the list */
 .book-item {
     background-color: #ffffff;
     margin-bottom: 15px;
@@ -80,13 +80,13 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* makeing sure that the heading inside the book item stands out */
+/* making sure that the heading inside the book item stands out */
 h3 {
     margin: 0;
     color: #333;
 }
 
-/* Styling all buttons to have a green background and become darker when hovered over */
+/* styling all buttons to have a green background and become darker when hovered over */
 button {
     margin-top: 10px;
     padding: 5px 10px;
@@ -98,12 +98,12 @@ button {
     transition: background-color 0.3s ease;
 }
 
-/* Changing the button color when you hover */
+/* changing the button color when you hover */
 button:hover {
     background-color: #1e7e34;
 }
 
-/* Styling the details section that appears when a book item is expanded */
+/* styling the details section that appears when a book item is expanded */
 .details {
     margin-top: 10px;
     padding: 10px;
@@ -113,13 +113,29 @@ button:hover {
     font-size: 0.9em;
 }
 
-/* Responsive design: making the search input field full width on small screens and adjusting book items */
+/* styling the bookshelf list */
+#myBookshelf {
+    margin: 20px;
+}
+
+#bookshelfList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bookshelfItem {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+/* responsive design: making the search input field full width on small screens and adjusting book items */
 @media (max-width: 600px) {
     #searchInput {
         width: calc(100% - 22px); /* this is the full width minus padding for smaller screens */
     }
 
     .book-item {
-        margin: 10px 0; /* More vertical spacing between book items on small screens */
+        margin: 10px 0; /* more vertical spacing between book items on small screens */
     }
 }
